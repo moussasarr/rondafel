@@ -138,6 +138,7 @@ figure {
 hr {
   box-sizing: content-box;
   height: 0;
+  color: #319680
 }
 
 /* line 221, ../sass/vendors/bootstrap/bootstrap/_normalize.scss */
