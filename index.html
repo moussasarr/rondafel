@@ -56,14 +56,22 @@
 						</svg>
 		      </a>
 		    </div>
+		
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div id="rondafel-nav" class="collapse navbar-collapse pull-right">
 		      <ul class="nav navbar-nav">
-		        <li class="nav-item"><a href="#why">Introduction</a></li>
-		        <li class="nav-item"><a href="#how">How It Works</a></li>
-		        <li class="nav-item"><a href="#features">Features</a></li>
-		        <li class="nav-item"><a href="#definition">About</a></li>
+		        <li class="nav-item"><a href="#why" style="color: rgba(0,0,0,0.54); font-family: 'Roboto', sans-serif; font-size: 1rem;">Welcome!</a></li>
+		        <li class="nav-item"><a href="#how" style="color: rgba(0,0,0,0.54); font-family: 'Roboto', sans-serif; font-size: 1rem;">How It Works</a></li>
+		        <li class="nav-item"><a href="#features" style="color: rgba(0,0,0,0.54); font-family: 'Roboto', sans-serif; font-size: 1rem;">Features</a></li>
+		        <!--<li class="nav-item dropdown-menu">About
+  					 <a class="dropdown-item" href="#">About Us</a>
+  					 <a class="dropdown-item" href="#">Team</a>
+  					 <a class="dropdown-item" href="#">FAQ</a>
+		        </li>-->
+
+		    
+
 		        <span class="pull-right"><a id="cta" href="#" class="btn btn-primary nav-item" data-toggle="modal" data-target="#signup">Sign Up</a></span>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -86,6 +94,20 @@
             <!--</ul>-->
         <!--</aside>-->
 		<div id="hero">
+		<div class="homepage-hero-module">
+   			 <div class="video-container">
+        		<div class="filter"></div>
+        		<video autoplay loop class="fillWidth">
+            		<source src="../cyclingsanta/Cycling-santa.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            		<source src="../cyclingsanta/Cycling-santa.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        		</video>
+        <div class="poster hidden">
+            <img src="../cyclingsanta/Cycling-santa.jpeg" alt="">
+        </div>
+    </div>
+</div>
+
+		    <!--
 			<div id="value" class="row text-center">
 		    	<div class="col-md-8 col-md-offset-2">
 			    	<svg width="90" height="90">
@@ -95,8 +117,9 @@
 		    		<p class="light">RONDAFEL helps you and your friends organize, collect money gradually and plan for group expenses.</p>
 		    		<p><a href="#why" id="arrow"><i class="fa fa-angle-down big light floating" aria-hidden="true"></i></a></p>
 	    		</div>
-		    </div>
+		    </div>-->
 		</div>
+
 
 		<div id="why" class="row text-center">
 			<div class="container">
@@ -303,7 +326,8 @@
 						<p>We are all about having meaningful relationships, sharing life experiences and growing together. These are the ingredients for happiness. But to have these things you need trust, friends and a little money all in the same pot. That’s why we built RONDAFEL - to help you organize better and trust that you can put your money where your heart is; with friends and family.</p>
 						<p>With RONDAFEL you will have more shared experiences because it’s easier to collect money for group plans. You will save more for goals shared with friends and you may even invest more because making money together feels awesome.</p>
 						<p>Our mission is to create a financial network made of many rondafel units. Each one interacting with retailers and markets with greater negotiating power.</p>
-						<p>Because together we are better; we are stronger; we are an ocean. RONDAFEL is connected money.</p>
+						<p>Because together we are better; we are stronger.</p>
+						<p> RONDAFEL is connected money.</p>
 					</div>
 				</div>
 			</div>
@@ -319,7 +343,9 @@
 				</svg>
 			</div>
 			<div class="row text-center">
-				<p><a href="#" data-toggle="modal" data-target="#contact">Get In Touch</a></p>
+				<p><a href="#" data-toggle="modal" data-target="#contact">Get Started</a></p>
+				<p><a href="#" data-toggle="modal" data-target="#contact">About</a></p>
+				<p><a href="#" data-toggle="modal" data-target="#contact">Frequently Asked Questions</a></p>
 				<p><small>© Copyright 2016  RONDAFEL™ | <a href="#" data-toggle="modal" data-target="#image-attribution">Image Attribution</a> | <a href="/blog">Blog</a> | New York | Philadelphia</small>
 					<small class="social-icons" style="padding-left:40px">
 						<a href="https://www.facebook.com/rondafel/" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a>
@@ -452,24 +478,16 @@
 		$('.nav-item').click( function() {
 		  $("#rondafel-nav").toggleClass("in");
 		});
-	</script>
 
-	<script type="text/javascript">
 		$('a').click(function(){
 		    $('html, body').animate({
 		        scrollTop: $( $(this).attr('href') ).offset().top
 		    }, 500);
 		    return false;
 		});
-	</script>
 
-	<script type="text/javascript">
-		var FIREFOX = /Firefox/i.test(navigator.userAgent);
 
-		if (FIREFOX) {
-		  document.getElementById("video").style.display="none";
-		}
-	</script>
+		</script>
 
 	<script type="text/javascript">
 				//jQuery is required to run this code
